@@ -1,0 +1,21 @@
+.card-wrapper {
+  width: 30%;
+  aspect-ratio: 1/1;
+  background: pink;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.card__picture {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.card__title {
+  position: absolute;
+  color: white;
+  z-index: 5;
+}/*# sourceMappingURL=Card.css.map */
