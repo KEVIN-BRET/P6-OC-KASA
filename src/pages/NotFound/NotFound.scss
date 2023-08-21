@@ -1,0 +1,65 @@
+// @import '../style/globalstyle.scss';
+
+* {
+	// border: 1px solid red;
+}
+
+.notFound-container {
+	// background: pink;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	// margin: 2rem auto;
+	gap: 5rem;
+	margin: 5rem 2rem;
+	color: #FF6060;
+	text-align: center;
+
+}
+
+.notFound_title {
+	font-size: 288px;
+	font-style: normal;
+	font-weight: 700;
+}
+
+.notFound_infos {
+	font-size: 36px;
+	font-weight: 500;
+	margin: auto;
+
+}
+
+.notFound_redirection {
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	text-decoration-line: underline;
+	margin: 5rem auto;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+	.notFound_title {
+		font-size: 144px;
+	}
+	.notFound_infos {
+		font-size: 24px;
+	}
+	.notFound_redirection {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.notFound_title {
+		font-size: 96px;
+	}
+	.notFound_infos {
+		font-size: 18px;
+	}
+	.notFound_redirection {
+		font-size: 14px;
+	}
+}
