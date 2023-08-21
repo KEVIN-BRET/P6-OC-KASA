@@ -22,11 +22,13 @@
 		color: white;
 		z-index: 2;
 	}
+
 	&__icon {
 		width: 32px;
 		height: 32px;
 		transform: rotate(0deg);
-		transition: all 0.2s ease-in-out;
+		transition: all 0.3s ease-in-out;
+
 		&.active {
 			transform: rotate(-180deg);
 		}
@@ -35,19 +37,30 @@
 	&__content {
 		visibility: hidden;
 		height: 0;
+		opacity: 0;
 		background: #F6F6F6;
 		padding: 10px 20px 10px 15px;
 		color: var(--red, #FF6060);
-		transform: translateY(-50);
-		transition: all 0.5s ease-in-out;
+		transform: translateY(-10px);
+		transition: transform 0.3s ease-in-out, visibility 0s 0.3s, height 0s 0.3s;
 		
+		&.active {
+			visibility: visible;
+			height: auto;
+			opacity: 1;
+			transform: translateY(0);
+			transition: all 0.2s ease-in-out;
+			// transition-delay: 0.1s;
+		}
+
 	}
-	&.active>.collapse__content{
-		visibility: visible;
-		height: auto;
-		transform: translateY(0);
-		transition: all 0.5s ease-in-out;
-	}
-	
+
+	// &.active>.collapse__content{
+	// 	visibility: visible;
+	// 	height: auto;
+	// 	transform: translateY(0);
+	// 	transition: all 0.5s ease-in-out;
+	// }
+
 
 }

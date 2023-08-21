@@ -21,7 +21,7 @@ const Collapse = ({ title, content }) => {
 					alt='collapse arrow'
 				/>
 			</div>
-			<div className='collapse__content'>{content}</div>
+			<div className={`collapse__content ${active && 'active'}`}>{content}</div>
 		</div>
 	);
 };
