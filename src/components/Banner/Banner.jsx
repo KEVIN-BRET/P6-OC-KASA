@@ -1,13 +1,12 @@
 import React from 'react';
 import './Banner.scss';
-import bannerBackground from '../../assets/images/banner_bg.webp';
 
-const Banner = () => {
+const Banner = ({ title, backgroundSrc }) => {
 	return (
 		<div className='banner'>
-			<p className='banner__title'>Chez vous, partout et ailleurs</p>
+			<p className='banner__title'>{title}</p>
 			<div className='banner__background'></div>
-			<img src={bannerBackground} alt="banner" className='banner__picture' />
+			<img src={backgroundSrc} alt="banner" className='banner__picture' />
 		</div>
 	);
 };

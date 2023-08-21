@@ -1,8 +1,4 @@
-// @import '../style/globalstyle.scss';
-
-* {
-	// border: 1px solid red;
-}
+@import '../../style/globalstyle.scss';
 
 .notFound-container {
 	// background: pink;
@@ -27,7 +23,7 @@
 .notFound_infos {
 	font-size: 36px;
 	font-weight: 500;
-	margin: auto;
+	margin: auto 3rem;
 
 }
 
