@@ -1,20 +1,68 @@
+@import '../../style/globalstyle.scss';
+
 .card-wrapper {
+	position: relative;
 	width: 30%;
-	aspect-ratio: 1/1;
-	// height: 340px;
-	background: pink;
-	object-fit: cover;
+	height: 340px;
+	background: #FF6060;
 	border-radius: 10px;
+	overflow: hidden;
+	transition: all 0.2s ease-in-out;
+
 }
 
-.card__picture {
+.card-wrapper:hover {
+	cursor: pointer;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.50)
+}
+
+
+.card-wrapper::before {
+	content: "";
+	width: 100%;
+	height: 100%;
 	position: absolute;
+	border-radius: 10px;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
+	z-index: 5;
+}
+
+.card-wrapper img {
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
-	overflow: hidden;
+	border-radius: 10px;
+	z-index: 4;
+	transition: all 0.2s ease-in-out;
+}
+
+.card-wrapper:hover img {
+	transform: scale(1.1);
 }
 
 .card__title {
 	position: absolute;
+	left: 20px;
+	bottom: 20px;
 	color: white;
-	z-index: 5;
+	z-index: 10;
+}
+
+@media screen and (max-width: 1230px) {
+	.card-wrapper {
+		width: 47%;
+
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.card-wrapper {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.card-wrapper {
+		height: 255px;
+	}
 }
