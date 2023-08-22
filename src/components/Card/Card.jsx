@@ -1,12 +1,15 @@
 import React from 'react';
 import './Card.scss';
+// import logementData from '../../assets/data/logementData.json';
+import { Link } from 'react-router-dom';
 
-const Card = ({title, cover}) => {
+
+const Card = ({id, title, cover}) => {
 	return (
-		<li className='card-wrapper'>
+		<Link to={`/logement/${id}`} className='card-wrapper' onClick={() => console.log(id)}>
 			<h3 className='card__title'>{title}</h3>
 			<img className='card__picture' src={cover} alt={title} />
-		</li>
+		</Link>
 	);
 };
 
