@@ -1,19 +1,20 @@
 import React from 'react';
 import './Gallery.scss';
 import Card from '../Card/Card';
+import logementData from '../../assets/data/logementData.json';
 
 
 const Gallery = () => {
 	return (
 		<div className='gallery'>
-			<Card />
-			<Card />
-			<Card />
-			<Card />
-			<Card />
-			<Card />
-			<Card />
-			<Card />
+			{logementData.map(({ id, title, cover }) =>
+			(
+				<Card key={id}
+					title={title}
+					cover={cover}
+				/>
+			)
+			)}
 		</div>
 	);
 };
