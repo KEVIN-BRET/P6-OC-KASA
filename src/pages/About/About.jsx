@@ -6,7 +6,6 @@ import './About.scss';
 import aboutData from '../../assets/data/aboutData.json';
 
 const About = () => {
-
 	return (
 		<div>
 			<Banner title='À propos de nous' backgroundSrc={AboutBannerBg} />
