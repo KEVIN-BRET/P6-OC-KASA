@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 
 import './Logement.scss';
-
+import Collapse from '../../components/Collapse/Collapse';
 import Carrousel from '../../components/Carrousel/Carrousel';
 import logementData from '../../assets/data/logementData.json';
 
@@ -26,8 +26,30 @@ const Logements = () => {
 				<Carrousel slides={slides} title={logementObject.title} />
 			</div>
 
-			<div className='title'>{logementObject.title}</div>
-			<dic className="location">{logementObject.location}</dic>
+			<div className="details-container">
+
+				<div className="title-container">
+					<div className='title'>{logementObject.title}</div>
+					<div className="location">{logementObject.location}</div>
+					<div className='tags'>{logementObject.tags.map((tag, index) => (<div className='tag' key={index}>{tag}</div>))}</div>
+				</div>
+
+				<div className="host-rating-container">
+					<div className='host'>HOST</div>
+					<div className="rating">RATING</div>
+				</div>
+
+			</div>
+
+			<div className="logement-collapse-container">
+				<div className='logement-collapse'>COLLAPSE 1</div>
+				<div className='logement-collapse'>COLLAPSE 2</div>
+
+
+			</div>
+
+
+
 		</div>
 	);
 };

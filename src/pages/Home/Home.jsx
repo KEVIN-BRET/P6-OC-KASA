@@ -16,7 +16,7 @@ const Home = () => {
 			<Banner title='Chez vous, partout et ailleurs' backgroundSrc={HomeBannerBg} />
 
 			<div className='gallery'>
-				{logementData.map(({ id, title, cover }) => // on
+				{logementData.map(({ id, title, cover }) => 
 				(
 					<Card key={id}
 						id={id}
