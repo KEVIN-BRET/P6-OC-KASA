@@ -1,19 +1,6 @@
-// .content {
-// 	margin: 5rem;
-// 	display: flex;
-// 	flex-direction: column;
-// 	align-items: center;
-// 	justify-content: center;
-// 	// position: relative;
-// 	height: 100%;
-// }
-
 .carrousel-container {
-	max-width: 90%;
+	position: relative;
+	width: 90%;
 	height: 415px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	margin: 2rem auto;
+	margin: 1rem auto;
 }
