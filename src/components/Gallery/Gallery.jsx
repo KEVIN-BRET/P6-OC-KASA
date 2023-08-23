@@ -3,7 +3,7 @@ import './Gallery.scss';
 import Card from '../Card/Card';
 import logementData from '../../assets/data/logementData.json';
 
-const Gallery = () => {
+export default function Gallery() {
 	return (
 		<div className='gallery'>
 			{logementData.map(({ id, title, cover }) =>
@@ -19,4 +19,4 @@ const Gallery = () => {
 	);
 };
 
-export default Gallery;
+

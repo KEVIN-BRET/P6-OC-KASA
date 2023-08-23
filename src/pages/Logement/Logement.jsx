@@ -2,7 +2,8 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 
 import './Logement.scss';
-// import Card from '../../components/Card/Card';
+
+import Carrousel from '../../components/Carrousel/Carrousel';
 import logementData from '../../assets/data/logementData.json';
 
 const Logements = () => {
@@ -12,12 +13,16 @@ const Logements = () => {
 	// on récupère l'objet logement correspondant à l'id
 	const logementObject = logementData.find((logement) => logement.id === logementId);
 
+	const slides = logementObject.pictures
+
 	return (
-		<div>
-			<div className='test'>
-				Fiche Logement : {logementId}
+		<div className='content'>
+
+			<div className="carrousel-container">
+				<Carrousel id={logementObject.id} slides={slides} logementObject={logementObject}/>
 			</div>
-			{console.log(logementObject.title)}
+
+			<h1>{logementObject.title}</h1>
 		</div>
 	);
 };

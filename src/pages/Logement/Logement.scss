@@ -1,9 +1,19 @@
-.test {
-	margin: 5rem;
+// .content {
+// 	margin: 5rem;
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: center;
+// 	justify-content: center;
+// 	// position: relative;
+// 	height: 100%;
+// }
+
+.carrousel-container {
+	max-width: 90%;
+	height: 415px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	position: relative;
-	height: 100%;
+	margin: 2rem auto;
 }
