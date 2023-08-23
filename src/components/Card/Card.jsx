@@ -4,9 +4,9 @@ import './Card.scss';
 import { Link } from 'react-router-dom';
 
 
-const Card = ({id, title, cover}) => {
+const Card = ({ id, title, cover }) => {
 	return (
-		<Link to={`/logement/${id}`} className='card-wrapper' onClick={() => console.log(id)}>
+		<Link to={`/logement/${id}`} className='card-wrapper'>
 			<h3 className='card__title'>{title}</h3>
 			<img className='card__picture' src={cover} alt={title} />
 		</Link>
@@ -14,3 +14,4 @@ const Card = ({id, title, cover}) => {
 };
 
 export default Card;
+
