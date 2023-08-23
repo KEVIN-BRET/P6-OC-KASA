@@ -40,7 +40,6 @@ export function Carrousel({ slides, title }) {
 						<div className="slide-number">
 							{currentIndex + 1} / {slides.length}
 						</div>
-						{console.log(slides.length)}
 					</div>
 				)
 			}

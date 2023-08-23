@@ -1,5 +1,5 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import {React} from 'react';
+import { useParams } from 'react-router-dom'; 
 
 import './Logement.scss';
 
@@ -16,6 +16,8 @@ const Logements = () => {
 	const logementId = params.logementId;
 	// on récupère l'objet logement correspondant à l'id
 	const logementObject = logementData.find((logement) => logement.id === logementId);
+
+
 
 	const slides = logementObject.pictures
 
