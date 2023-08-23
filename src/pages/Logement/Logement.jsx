@@ -1,5 +1,5 @@
-import {React} from 'react';
-import { useParams } from 'react-router-dom'; 
+import React from 'react';
+import { useParams } from 'react-router-dom';
 
 import './Logement.scss';
 
@@ -16,9 +16,7 @@ const Logements = () => {
 	const logementId = params.logementId;
 	// on récupère l'objet logement correspondant à l'id
 	const logementObject = logementData.find((logement) => logement.id === logementId);
-
-
-
+	// on récupère les images du logement
 	const slides = logementObject.pictures
 
 	return (
@@ -28,7 +26,8 @@ const Logements = () => {
 				<Carrousel slides={slides} title={logementObject.title} />
 			</div>
 
-			<h1>{logementObject.title}</h1>
+			<div className='title'>{logementObject.title}</div>
+			<dic className="location">{logementObject.location}</dic>
 		</div>
 	);
 };

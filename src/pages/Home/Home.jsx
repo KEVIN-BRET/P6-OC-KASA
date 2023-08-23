@@ -1,17 +1,21 @@
 import React from 'react';
 import Banner from '../../components/Banner/Banner';
-// import Gallery from '../../components/Gallery/Gallery';
 import HomeBannerBg from '../../assets/images/home_banner_bg.webp'
 import './Home.scss';
 import Card from '../../components/Card/Card';
 import logementData from '../../assets/data/logementData.json';
 
+
+
 const Home = () => {
+
+
+
 	return (
 		<div>
 			<Banner title='Chez vous, partout et ailleurs' backgroundSrc={HomeBannerBg} />
 
-			<div className='gallery'> 
+			<div className='gallery'>
 				{logementData.map(({ id, title, cover }) => // on
 				(
 					<Card key={id}

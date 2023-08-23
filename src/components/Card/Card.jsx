@@ -1,6 +1,5 @@
 import React from 'react';
 import './Card.scss';
-// import logementData from '../../assets/data/logementData.json';
 import { Link } from 'react-router-dom';
 
 

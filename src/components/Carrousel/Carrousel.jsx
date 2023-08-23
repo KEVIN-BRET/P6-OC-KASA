@@ -26,7 +26,7 @@ export function Carrousel({ slides, title }) {
 	}
 
 	return (
-		<div>
+		<div className='carrousel'>
 			{
 				slides.length === 0 ? ( // si pas de photo
 					<h2 className="no-photo-msg">Pas de photo disponible ..</h2>
