@@ -54,3 +54,18 @@
 	}
 
 }
+
+@media screen and (max-width: 550px) {
+	.collapse__title {
+		font-size: 13px;
+	}
+
+	.collapse__icon {
+		width: 16px;
+		height: 16px;
+	}
+
+	.collapse__content {
+		font-size: 13px;
+	}
+}

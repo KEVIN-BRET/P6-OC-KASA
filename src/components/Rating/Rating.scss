@@ -4,3 +4,10 @@
 	margin-right: 5px; 
   }
   
+  @media screen and (max-width: 550px) {
+	.rating img {
+		width: 12px;
+		height: 12px;
+		margin-right: 5px; 
+	  }
+	}
