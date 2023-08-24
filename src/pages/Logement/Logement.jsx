@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import './Logement.scss';
 import Collapse from '../../components/Collapse/Collapse';
 import Carrousel from '../../components/Carrousel/Carrousel';
+import Rating from '../../components/Rating/Rating';
 import logementData from '../../assets/data/logementData.json';
 
 const Logements = () => {
@@ -18,6 +19,9 @@ const Logements = () => {
 	const logementObject = logementData.find((logement) => logement.id === logementId);
 	// on récupère les images du logement
 	const slides = logementObject.pictures
+	// on récupère le nom de l'hôte dans un tableau pour pouvoir le séparer en deux
+	const hostName = logementObject.host.name.split(' ');
+
 
 	return (
 		<div className='content'>
@@ -35,11 +39,17 @@ const Logements = () => {
 				</div>
 
 				<div className="host-rating-container">
+				
 					<div className='host'>
-						<div className='host-name'>{logementObject.host.name}</div>
+						<div className='host-name'>
+							<span>{hostName[0]}</span>
+							<span>{hostName[1]}</span>
+						</div>
 						<img src={logementObject.host.picture} alt={logementObject.host.name} className='host-picture' />
 					</div>
-					<div className="rating">RATING</div>
+
+					<Rating value={logementObject.rating} />
+
 				</div>
 
 			</div>
