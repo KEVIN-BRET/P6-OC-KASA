@@ -59,23 +59,68 @@
 	padding: 1px 15px;
 }
 
-.logement-collapse-container {
+.host {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 10px;
+
+	&-name {
+		color: #FF6060;
+		text-align: right;
+		font-family: Montserrat;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 500;
+	}
+
+	&-picture {
+		width: 65px;
+		height: 65px;
+		border-radius: 50%;
+	}
+}
+
+.rating {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 10px;
+
+	// &-number {
+	// 	color: #FF6060;
+	// 	text-align: right;
+	// 	font-family: Montserrat;
+	// 	font-size: 18px;
+	// 	font-style: normal;
+	// 	font-weight: 500;
+	// }
+
+	// &-stars {
+	// 	width: 65px;
+	// 	height: 65px;
+	// 	border-radius: 50%;
+	// }
+}
+
+
+
+.logement-collapse-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2rem;
 	margin: 1rem 3rem;
-	background: pink;
+	// background: pink;
 
 }
 
-.logement-collapse {
-	width: 100%;
-	background: #FF6060;
-	border-radius: 10px;
-	padding: 1rem;
+@media screen and (max-width: 750px) {
+	.logement-collapse-container {
+		display: flex;
+		flex-direction: column;
+		gap: 0rem;
+	}
 }
-
-
 
 @media screen and (max-width: 550px) {
 	.carrousel-container {

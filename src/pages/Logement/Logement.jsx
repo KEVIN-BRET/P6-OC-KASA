@@ -35,16 +35,20 @@ const Logements = () => {
 				</div>
 
 				<div className="host-rating-container">
-					<div className='host'>HOST</div>
+					<div className='host'>
+						<div className='host-name'>{logementObject.host.name}</div>
+						<img src={logementObject.host.picture} alt={logementObject.host.name} className='host-picture' />
+					</div>
 					<div className="rating">RATING</div>
 				</div>
 
 			</div>
 
 			<div className="logement-collapse-container">
-				<div className='logement-collapse'>COLLAPSE 1</div>
-				<div className='logement-collapse'>COLLAPSE 2</div>
 
+				<Collapse title={`Description`} content={logementObject.description} />
+
+				<Collapse title={`Equipements`} content={logementObject.equipments.map((equipement, index) => <div className="equipement-list" key={index}>{equipement}</div>)} />
 
 			</div>
 
