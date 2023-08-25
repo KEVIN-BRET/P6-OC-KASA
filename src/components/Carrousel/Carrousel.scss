@@ -16,7 +16,15 @@
 	height: 100%;
 	object-fit: cover;
 	border-radius: 25px;
+	opacity: 1;
+	transition: opacity 0.2s; 
+	// 0.5s est le temps de transition, vous pouvez l'ajuster selon vos besoins.
 }
+
+.fading-out {
+    opacity: 0;
+}
+
 
 .nav-btn {
 	position: absolute;

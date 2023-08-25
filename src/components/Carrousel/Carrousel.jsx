@@ -5,24 +5,33 @@ import nextBtn from '../../assets/images/next-btn.png';
 
 export function Carrousel({ slides, title }) {
 	const [currentIndex, setCurrentIndex] = useState(0);
+	const [fading, setFading] = useState(false);
 
-	// pour aller à la slide précédente
+
 	function goToPrevious() {
-		if (currentIndex === 0) {
-			setCurrentIndex(slides.length - 1);
-		} else {
-			setCurrentIndex(currentIndex - 1);
-		}
+		setFading(true);
+		setTimeout(() => {
+			if (currentIndex === 0) {
+				setCurrentIndex(slides.length - 1);
+			} else {
+				setCurrentIndex(currentIndex - 1);
+			}
+			setFading(false);
+		}, 200); // ce doit être le même temps que celui défini dans le CSS pour la transition
 	}
-
-	// pour aller à la slide suivante
+	
 	function goToNext() {
-		if (currentIndex === slides.length - 1) {
-			setCurrentIndex(0);
-		} else {
-			setCurrentIndex(currentIndex + 1);
-		}
+		setFading(true); // 
+		setTimeout(() => {
+			if (currentIndex === slides.length - 1) {
+				setCurrentIndex(0);
+			} else {
+				setCurrentIndex(currentIndex + 1);
+			}
+			setFading(false); //
+		}, 200); // ce doit être le même temps que celui défini dans le CSS pour la transition
 	}
+	
 
 	return (
 		<div className='carrousel'>
@@ -34,7 +43,9 @@ export function Carrousel({ slides, title }) {
 				) : (
 					<div>
 						<img className='nav-btn prev-btn' src={prevBtn} alt='précédente' onClick={goToPrevious} />
-						<img src={slides[currentIndex]} className='slides' alt={title} />
+						
+						<img src={slides[currentIndex]} className={`slides ${fading ? 'fading-out' : ''}`} alt={title} />
+
 						<img className='nav-btn next-btn' src={nextBtn} alt='suivante' onClick={goToNext} />
 						<div className="slide-number">
 							{currentIndex + 1} / {slides.length}
