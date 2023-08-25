@@ -1,6 +1,5 @@
 import './Carrousel.scss';
 import { useState } from 'react';
-// import logementObject from '../../assets/data/logementData.json';
 import prevBtn from '../../assets/images/prev-btn.png';
 import nextBtn from '../../assets/images/next-btn.png';
 

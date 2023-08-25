@@ -1,7 +1,13 @@
 import './NotFound.scss';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const NotFound = () => {
+
+	useEffect(() => {
+		document.title = `Kasa | Not Found`
+	}, [])
+
 	return (
 		<div className="notFound-container">
 			<h1 className='notFound_title'>404</h1>

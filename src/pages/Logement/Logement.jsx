@@ -6,8 +6,13 @@ import Collapse from '../../components/Collapse/Collapse';
 import Carrousel from '../../components/Carrousel/Carrousel';
 import Rating from '../../components/Rating/Rating';
 import logementData from '../../assets/data/logementData.json';
+import { useEffect } from 'react';
 
 const Logements = () => {
+
+	useEffect(() => {
+		document.title = `Kasa | ${logementObject.title}`
+	}, [])
 
 	// Cette methode peut generer des erreurs si on ne récupère pas le bon paramètre :
 	// const { logementId } = useParams();
