@@ -7,16 +7,18 @@ import './Header.scss';
 const Header = () => {
     return (
         <div className='header-container'>
-            <img src={logo} alt="logo" />
+
+            <NavLink to="/"><img src={logo} alt="logo" /></NavLink>
+
             <nav className='nav-container'>
-                <NavLink 
-                    to="/" 
+                <NavLink
+                    to="/"
                     className={({ isActive }) => (isActive ? 'active-link' : '')}
                 >
                     Accueil
                 </NavLink>
-                <NavLink 
-                    to="/about" 
+                <NavLink
+                    to="/about"
                     className={({ isActive }) => (isActive ? 'active-link' : '')}
                 >
                     A Propos
