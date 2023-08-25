@@ -17,8 +17,8 @@
 	object-fit: cover;
 	border-radius: 25px;
 	opacity: 1;
-	transition: opacity 0.2s; 
-	// 0.5s est le temps de transition, vous pouvez l'ajuster selon vos besoins.
+	transition: opacity 0.2s; // il faut que la transition soit plus rapide que celle du carrousel
+	
 }
 
 .fading-out {

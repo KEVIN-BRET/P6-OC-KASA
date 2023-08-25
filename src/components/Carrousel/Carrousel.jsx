@@ -9,14 +9,14 @@ export function Carrousel({ slides, title }) {
 
 
 	function goToPrevious() {
-		setFading(true);
+		setFading(true);// on passe fading à true pour que la transition se fasse
 		setTimeout(() => {
 			if (currentIndex === 0) {
 				setCurrentIndex(slides.length - 1);
 			} else {
 				setCurrentIndex(currentIndex - 1);
 			}
-			setFading(false);
+			setFading(false);// on passe fading à false pour que la transition se fasse
 		}, 200); // ce doit être le même temps que celui défini dans le CSS pour la transition
 	}
 	
