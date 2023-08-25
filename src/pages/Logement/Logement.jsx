@@ -10,10 +10,6 @@ import { useEffect } from 'react';
 
 const Logements = () => {
 
-	useEffect(() => {
-		document.title = `Kasa | ${logementObject.title}`
-	}, [])
-
 	// Cette methode peut generer des erreurs si on ne récupère pas le bon paramètre :
 	// const { logementId } = useParams();
 	// Utiliser cette méthode pour être sure de pouvoir récupérer plusieurs paramètres
@@ -26,6 +22,11 @@ const Logements = () => {
 	const slides = logementObject.pictures
 	// on récupère le nom de l'hôte dans un tableau pour pouvoir le séparer en deux
 	const hostName = logementObject.host.name.split(' ');
+
+	useEffect(() => {
+		document.title = `Kasa | ${logementObject.title}`
+	}, [logementObject.title])
+
 
 
 	return (
