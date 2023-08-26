@@ -1,7 +1,8 @@
 import React from 'react';
 import './Banner.scss';
 
-const Banner = ({ title, backgroundSrc }) => {
+
+export default function Banner({ title, backgroundSrc }) {
 	return (
 		<div className='banner'>
 			<p className='banner__title'>{title}</p>
@@ -10,5 +11,3 @@ const Banner = ({ title, backgroundSrc }) => {
 		</div>
 	);
 };
-
-export default Banner;

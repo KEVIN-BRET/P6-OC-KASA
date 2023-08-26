@@ -3,21 +3,20 @@ import starRed from '../../assets/images/star-red.png';
 import starGrey from '../../assets/images/star-grey.png';
 import './Rating.scss';
 
-const Rating = ({ value }) => {
+
+export default function Rating({ value }) {
+
   return (
-	
+
     <div className="rating">
       {[...Array(5)].map((_, i) => (
-        <img 
+        <img
           key={i}
           src={i < value ? starRed : starGrey}
-          alt="star" 
-		  className={i < value ? "star-red" : "star-grey"} 
+          alt="star"
+          className={i < value ? "star-red" : "star-grey"}
         />
       ))}
     </div>
   );
 };
-
-
-export default Rating;

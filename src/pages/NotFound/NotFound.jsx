@@ -2,7 +2,7 @@ import './NotFound.scss';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 
-const NotFound = () => {
+export default function NotFound() {
 
 	useEffect(() => {
 		document.title = `Kasa | Not Found`
@@ -15,5 +15,3 @@ const NotFound = () => {
 			<Link to="/" className='notFound_redirection'>Retourner sur la page d'accueil</Link>
 		</div>);
 };
-
-export default NotFound;

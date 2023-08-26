@@ -3,7 +3,9 @@ import './Collapse.scss';
 import { useState } from 'react';
 import collapseArrow from '../../assets/images/arrow_up.png';
 
-const Collapse = ({ title, content }) => {
+
+export default function Collapse({ title, content }) {
+
 	const [active, setActive] = useState(false);
 
 	const handleToggle = () => {
@@ -25,6 +27,3 @@ const Collapse = ({ title, content }) => {
 		</div>
 	);
 };
-
-
-export default Collapse;

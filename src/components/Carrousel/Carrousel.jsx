@@ -3,10 +3,11 @@ import { useState } from 'react';
 import prevBtn from '../../assets/images/prev-btn.png';
 import nextBtn from '../../assets/images/next-btn.png';
 
-export function Carrousel({ slides, title }) {
+
+export default function Carrousel({ slides, title }) {
+
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const [fading, setFading] = useState(false);
-
 
 	function goToPrevious() {
 		setFading(true);// on passe fading à true pour que la transition se fasse
@@ -19,7 +20,7 @@ export function Carrousel({ slides, title }) {
 			setFading(false);// on passe fading à false pour que la transition se fasse
 		}, 200); // ce doit être le même temps que celui défini dans le CSS pour la transition
 	}
-	
+
 	function goToNext() {
 		setFading(true); // 
 		setTimeout(() => {
@@ -31,7 +32,6 @@ export function Carrousel({ slides, title }) {
 			setFading(false); //
 		}, 200); // ce doit être le même temps que celui défini dans le CSS pour la transition
 	}
-	
 
 	return (
 		<div className='carrousel'>
@@ -43,7 +43,7 @@ export function Carrousel({ slides, title }) {
 				) : (
 					<div>
 						<img className='nav-btn prev-btn' src={prevBtn} alt='précédente' onClick={goToPrevious} />
-						
+
 						<img src={slides[currentIndex]} className={`slides ${fading ? 'fading-out' : ''}`} alt={title} />
 
 						<img className='nav-btn next-btn' src={nextBtn} alt='suivante' onClick={goToNext} />
@@ -55,6 +55,4 @@ export function Carrousel({ slides, title }) {
 			}
 		</div>
 	);
-}
-
-export default Carrousel;
+};

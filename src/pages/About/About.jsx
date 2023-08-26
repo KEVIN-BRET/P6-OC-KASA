@@ -6,7 +6,7 @@ import './About.scss';
 import aboutData from '../../assets/data/aboutData.json';
 import { useEffect } from 'react';
 
-const About = () => {
+export default function About() {
 
 	useEffect(() => {
 		document.title = `Kasa | A propos`
@@ -30,5 +30,3 @@ const About = () => {
 		</div>
 	);
 };
-
-export default About;

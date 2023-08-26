@@ -6,7 +6,7 @@ import Card from '../../components/Card/Card';
 import logementData from '../../assets/data/logementData.json';
 import { useEffect } from 'react';
 
-export function Home() {
+export default function Home() {
 
 	useEffect(() => {
 		document.title = `Kasa | Accueil`
@@ -31,5 +31,3 @@ export function Home() {
 		</div>
 	);
 };
-
-export default Home;

@@ -11,7 +11,7 @@ import logementData from '../../assets/data/logementData.json';
 import './Logement.scss';
 
 
-const Logements = () => {
+export default function Logements() {
 
 	// const { logementId } = useParams(); (peut generer des erreurs si on a plusieurs paramètres)
 	// on récupère l'id du logement dans l'url avec cette méthode :
@@ -87,5 +87,3 @@ const Logements = () => {
 		</div>
 	);
 };
-
-export default Logements;
