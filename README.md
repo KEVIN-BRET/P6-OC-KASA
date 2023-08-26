@@ -1,73 +1,62 @@
+
+# Créez une application web de location immobilière avec React
+
+Projet OpenClassrooms N°6 : Kasa
+
+![image](https://user.oc-static.com/upload/2022/06/24/16560899769906_FR_811_P8_Banner-Kasa%20%281%29.png)
+
 https://kevin-bret.github.io/kasa/
 
 
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `yarn start`
+## Skills
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?logo=javascript&logoColor=%23F7DF1E&style=for-the-badge)
+![React](https://img.shields.io/badge/react-%2320232a.svg?logo=react&logoColor=%2361DAFB&style=for-the-badge)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?logo=react-router&logoColor=white&style=for-the-badge)
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?logo=SASS&logoColor=white&style=for-the-badge)
+## Scénario
+Kasa vous recrute en tant que développeur front-end en freelance pour développer sa nouvelle plateforme web. Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour, Kasa fait partie des leaders de la location d’appartements entre particuliers en France. 
 
-### `yarn test`
+- [Kasa coding guidelines.pdf](https://drive.google.com/file/d/10EyQ0lYUNOIN9aWb_Xg3imUqzkTeHGiU/view?usp=sharing)
+- [Maquette Figma Kasa (.fig)](https://drive.google.com/file/d/1xjCWjDWlpCX8mMYl0BITIKgkBINAz72d/view?usp=sharing)
+## Mission / Contraintes techniques
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### React :
+- Découpage en composants modulaires et réutilisables ;
+- Un composant par fichier
+- Structure logique des différents fichiers
+- Utilisation des props entre les composants
+- Utilisation du state dans les composants quand c'est nécessaire
+- Gestion des événements
+- Listes : Utiliser les map autant que possible.
 
-### `yarn build`
+### React Router :
+- Les paramètres des routes sont gérés par React Router dans l'URL pour récupérer les informations de chaque logement.
+- Il existe une page par route.
+- La page 404 est renvoyée pour chaque route inexistante, ou si une valeur présente dans l’URL ne fait pas partie des données renseignées.
+- La logique du routeur est réunie dans un seul fichier.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Général :
+- Le code ne doit pas produire d'erreur ou de warning dans la console.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Comment lancer le projet ?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Une fois avoir cloner le repo en local sur votre machine, placer-vous dans le repertoire racine du projet avec un terminal ou votre IDE (ex : VsCode), puis :
 
-### `yarn eject`
+Exectutez "npm init" pour télécharger toute les dépendances.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Exectutez "npm start" pour lancer l'application dans votre navigateur.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## 🔗 Links
+[![OPENCLASSROOMS](https://img.shields.io/badge/OPENCLASSROOMS-7451EB?style=for-the-badge&logoColor=white)](https://openclassrooms.com/fr/)
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://kevinbret.fr/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/kevin-bret-534a73180)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
