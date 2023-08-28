@@ -1,3 +1,5 @@
+@import '../../style/globalstyle.scss';
+
 .collapse {
 	display: flex;
 	flex-direction: column;
@@ -13,8 +15,8 @@
 		padding: 10px 20px 10px 15px;
 		border-radius: 5px;
 		width: 100%;
-		background: var(--red, #FF6060);
-		color: white;
+		background: $color-primary;
+		color: $white;
 		z-index: 2;
 	}
 
@@ -34,9 +36,9 @@
 		visibility: hidden;
 		height: 0;
 		opacity: 0;
-		background: #F6F6F6;
+		background: $grey-light-bg;
 		padding: 10px 20px 10px 15px;
-		color: var(--red, #FF6060);
+		color: var(--red, $color-primary);
 		transform: translateY(-10px);
 		transition: transform 0.3s ease-in-out, visibility 0s 0.3s, height 0s 0.3s;
 	}

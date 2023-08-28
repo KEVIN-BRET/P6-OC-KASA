@@ -1,10 +1,4 @@
-*,
-::after,
-::before {
-	margin: O;
-	padding: 0;
-	box-sizing: border-box;
-}
+@import '../../style/globalstyle.scss';
 
 .carrousel-container {
 	margin-top: 2rem;
@@ -56,7 +50,7 @@
 	bottom: 5%;
 	left: 50%;
 	transform: translateX(-50%);
-	color: white;
+	color: $white;
 	font-size: 1.5rem;
 	font-weight: 500;
 	z-index: 10;

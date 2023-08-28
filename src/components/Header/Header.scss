@@ -1,3 +1,5 @@
+@import '../../style/globalstyle.scss';
+
 .header-container {
 	display: flex;
 	align-items: center;
@@ -8,7 +10,7 @@
 .nav-container {
 	display: flex;
 	align-items: center;
-	color: #FF6060;
+	color: $color-primary;
 	gap: 2rem;
 	font-family: Montserrat;
 	font-size: 24px;
@@ -16,7 +18,7 @@
 }
 
 .active-link {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 900px) {

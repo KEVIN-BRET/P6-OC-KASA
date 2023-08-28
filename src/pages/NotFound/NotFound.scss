@@ -1,15 +1,14 @@
+@import '../../style/globalstyle.scss';
+
 .notFound-container {
-	// background: pink;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
-	// margin: 2rem auto;
 	gap: 5rem;
 	margin: 5rem 2rem;
-	color: #FF6060;
+	color: $color-primary;
 	text-align: center;
-
 }
 
 .notFound_title {
@@ -22,7 +21,6 @@
 	font-size: 36px;
 	font-weight: 500;
 	margin: auto 3rem;
-
 }
 
 .notFound_redirection {

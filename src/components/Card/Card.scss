@@ -1,8 +1,9 @@
+@import '../../style/globalstyle.scss';
+
 .card-wrapper {
 	position: relative;
 	width: 30%;
 	height: 340px;
-	// background: #FF6060;
 	border-radius: 10px;
 	overflow: hidden;
 	transition: all 0.2s ease-in-out;
@@ -42,7 +43,7 @@
 	position: absolute;
 	left: 20px;
 	bottom: 20px;
-	color: white;
+	color: $white;
 	z-index: 10;
 }
 

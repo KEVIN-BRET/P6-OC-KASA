@@ -1,11 +1,8 @@
-* {
-	margin: 0;
-	padding: 0;
-}
+@import '../../style/globalstyle.scss';
 
 .gallery {
 	border-radius: 25px;
-	background: #F6F6F6;
+	background: $grey-light-bg;
 	padding: 50px;
 	gap: 50px;
 	height: auto;
@@ -27,6 +24,6 @@
 	.gallery {
 		margin: auto;
 		padding: 20px;
-		background: white;
+		background: $white;
 	}
 }

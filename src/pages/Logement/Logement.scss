@@ -1,3 +1,5 @@
+@import '../../style/globalstyle.scss';
+
 .carrousel-container {
 	position: relative;
 	height: 415px;
@@ -11,7 +13,7 @@
 }
 
 .title {
-	color: #FF6060;
+	color: $color-primary;
 	font-family: Montserrat;
 	font-size: 36px;
 	font-style: normal;
@@ -20,7 +22,7 @@
 }
 
 .location {
-	color: #FF6060;
+	color: $color-primary;
 	font-family: Montserrat;
 	font-size: 18px;
 	font-style: normal;
@@ -37,8 +39,8 @@
 
 .tag {
 	display: flex;
-	background: #FF6060;
-	color: white;
+	background: $color-primary;
+	color: $white;
 	font-family: Montserrat;
 	font-size: 18px;
 	font-style: normal;
@@ -63,7 +65,7 @@
 	&-name {
 		display: flex;
 		flex-direction: column;
-		color: #FF6060;
+		color: $color-primary;
 		text-align: right;
 		font-family: Montserrat;
 		font-size: 18px;
