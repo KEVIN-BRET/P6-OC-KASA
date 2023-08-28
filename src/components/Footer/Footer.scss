@@ -7,15 +7,14 @@
 	align-items: center;
 	gap: 20px;
 	background: black;
-	color: $white
-}
+	color: $white;
 
-.footer-logo {
-	margin-top: 66px;
-}
+	&__logo {
+		margin-top: 66px;
+	}
 
-.footer-text {
-	font-family: Montserrat;
-	font-size: 1rem;
-	margin-bottom: 29px;
+	&__text {
+		font-size: 1rem;
+		margin-bottom: 29px;
+	}
 }

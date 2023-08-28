@@ -9,9 +9,9 @@ export default function NotFound() {
 	}, [])
 
 	return (
-		<div className="notFound-container">
-			<h1 className='notFound_title'>404</h1>
-			<p className='notFound_infos'>Oups! La page que vous recherchez n'existe pas.</p>
-			<Link to="/" className='notFound_redirection'>Retourner sur la page d'accueil</Link>
+		<div className="notFound">
+			<h1 className='notFound__title'>404</h1>
+			<p className='notFound__infos'>Oups! La page que vous recherchez n'existe pas.</p>
+			<Link to="/" className='notFound__redirection'>Retourner sur la page d'accueil</Link>
 		</div>);
 };

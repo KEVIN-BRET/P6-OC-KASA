@@ -1,44 +1,47 @@
 @import '../../style/globalstyle.scss';
 
-.header-container {
+.header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	margin: 0 3rem;
+
+	&__nav {
+		display: flex;
+		align-items: center;
+		color: $color-primary;
+		gap: 2rem;
+		font-family: Montserrat;
+		font-size: 24px;
+		font-style: normal;
+
+		& .active-link {
+			text-decoration: underline;
+		}
+	}
 }
 
-.nav-container {
-	display: flex;
-	align-items: center;
-	color: $color-primary;
-	gap: 2rem;
-	font-family: Montserrat;
-	font-size: 24px;
-	font-style: normal;
-}
-
-.active-link {
-    text-decoration: underline;
-}
 
 @media screen and (max-width: 900px) {
-	.nav-container {
-		font-size: 1rem;
-		gap: 1rem;
-	}
+	.header {
+		&__nav {
+			font-size: 1rem;
+			gap: 1rem;
+		}
 
-	.header-container img {
-		height: 45px;
+		&__logo {
+			height: 45px;
+		}
 	}
 }
 
 @media screen and (max-width:550px) {
-	.header-container {
-		// flex-direction: column;
+	.header {
 		margin: 0 1rem;
+
+		&__nav {
+			margin: 1.5rem 0;
+		}
 	}
 
-	.nav-container {
-		margin: 1.5rem 0;
-	}
 }

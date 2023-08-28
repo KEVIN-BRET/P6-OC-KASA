@@ -44,28 +44,28 @@ export default function Logements() {
 	const hostName = logementObject?.host?.name?.split(' ');
 
 	return (
-		<div className='content'>
+		<div>
 
 			<div className="carrousel-container">
 				<Carrousel slides={slides} title={logementObject.title} />
 			</div>
 
-			<div className="details-container">
+			<div className="details">
 
-				<div className="title-container">
-					<div className='title'>{logementObject.title}</div>
-					<div className="location">{logementObject.location}</div>
-					<div className='tags'>{logementObject.tags.map((tag, index) => (<div className='tag' key={index}>{tag}</div>))}</div>
+				<div className="details__infos1">
+					<div className='details__infos1__title'>{logementObject.title}</div>
+					<div className="details__infos1__location">{logementObject.location}</div>
+					<div className='details__infos1__tags'>{logementObject.tags.map((tag, index) => (<div className='tag' key={index}>{tag}</div>))}</div>
 				</div>
 
-				<div className="host-rating-container">
+				<div className="details__infos2">
 
-					<div className='host'>
-						<div className='host-name'>
+					<div className='details__infos2__host'>
+						<div className='details__infos2__host__name'>
 							<span>{hostName[0]}</span>
 							<span>{hostName[1]}</span>
 						</div>
-						<img src={logementObject.host.picture} alt={logementObject.host.name} className='host-picture' />
+						<img src={logementObject.host.picture} alt={logementObject.host.name} className='details__infos2__host__picture' />
 					</div>
 
 					<Rating value={logementObject.rating} />

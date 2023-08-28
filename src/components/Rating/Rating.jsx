@@ -14,7 +14,7 @@ export default function Rating({ value }) {
           key={i}
           src={i < value ? starRed : starGrey}
           alt="star"
-          className={i < value ? "star-red" : "star-grey"}
+          // className={i < value ? "star-red" : "star-grey"}
         />
       ))}
     </div>

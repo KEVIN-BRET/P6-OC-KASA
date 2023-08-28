@@ -8,11 +8,11 @@ import './Header.scss';
 export default function Header() {
 
     return (
-        <div className='header-container'>
+        <div className='header'>
 
-            <NavLink to="/"><img src={logo} alt="logo" /></NavLink>
+            <NavLink to="/"><img className='header__logo' src={logo} alt="logo" /></NavLink>
 
-            <nav className='nav-container'>
+            <nav className='header__nav'>
                 <NavLink
                     to="/"
                     className={({ isActive }) => (isActive ? 'active-link' : '')}
