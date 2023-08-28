@@ -10,11 +10,11 @@ export default function Header() {
     return (
         <div className='header-container'>
 
-            <NavLink to="/kasa"><img src={logo} alt="logo" /></NavLink>
+            <NavLink to="/"><img src={logo} alt="logo" /></NavLink>
 
             <nav className='nav-container'>
                 <NavLink
-                    to="/kasa"
+                    to="/"
                     className={({ isActive }) => (isActive ? 'active-link' : '')}
                 >
                     Accueil
