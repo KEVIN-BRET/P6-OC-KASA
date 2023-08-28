@@ -37,17 +37,18 @@ export default function Carrousel({ slides, title }) {
 		<div className='carrousel'>
 			{
 				slides.length === 0 ? ( // si pas de photo
-					<h2 className="no-photo-msg">Pas de photo disponible ..</h2>
+					<h2 className="carrousel__no-photo-msg">Pas de photo disponible ..</h2>
 				) : slides.length === 1 ? ( // si une seule photo
-					<img src={slides[currentIndex]} className='slides' alt={title} />
+					<img src={slides[currentIndex]} className='carrousel__slides' alt={title} />
 				) : (
 					<div>
-						<img className='nav-btn prev-btn' src={prevBtn} alt='précédente' onClick={goToPrevious} />
+						<img className='carrousel__nav-btn prev-btn' src={prevBtn} alt='précédente' onClick={goToPrevious} />
 
-						<img src={slides[currentIndex]} className={`slides ${fading ? 'fading-out' : ''}`} alt={title} />
+						<img src={slides[currentIndex]} className={`carrousel__slides ${fading ? 'fading-out' : ''}`} alt={title} />
 
-						<img className='nav-btn next-btn' src={nextBtn} alt='suivante' onClick={goToNext} />
-						<div className="slide-number">
+						<img className='carrousel__nav-btn next-btn' src={nextBtn} alt='suivante' onClick={goToNext} />
+
+						<div className="carrousel__slide-number">
 							{currentIndex + 1} / {slides.length}
 						</div>
 					</div>
